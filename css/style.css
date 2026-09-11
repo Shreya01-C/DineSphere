@@ -1892,3 +1892,16 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 .vivid-yellow-bg{
 	background: #fdcb03;
 }
+#owl-demo .item-img {
+  width: 600px;     
+  height: 400px;    
+  margin: 0 auto;   
+  overflow: hidden;   
+}
+
+#owl-demo .item-img img {
+  width: 100%;       
+  height: 100%;     
+  object-fit: cover; 
+  display: block;
+}
