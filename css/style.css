@@ -254,13 +254,18 @@ html, body{ height: 100%; }
 #header{}
 .logo{
 	float:left;
+	margin-left: 20px;
 }
 .header-block-top{
-	position: absolute;
+	position: relative;  
     z-index: 11;
     width: 100%;
     top: 0;
     left: 0;
+    display: flex;       
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .main-menu{}
@@ -353,8 +358,11 @@ html, body{ height: 100%; }
     z-index: 999;
     background-color: #202020;
     transition: 0.5s;
-    padding: 10px 0 0 0;
+    padding: 10px 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	display: flex; 
+	align-items: center;
+    justify-content: space-between;
 }
 
 .fixed-menu .navbar-brand{
