@@ -481,6 +481,8 @@ html, body{ height: 100%; }
 
 .logo{
 	float:left;
+	max-width: 300px;   
+    margin-left: 20px;
 }
 .header-block-top{
 	position: absolute;
@@ -589,7 +591,8 @@ html, body{ height: 100%; }
 }
 
 .fixed-menu .navbar-brand>img {
-    max-width: 150px;
+    max-width: none;
+	width: auto;
 }
 
 .fixed-menu .main-menu nav li a{
