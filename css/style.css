@@ -62,6 +62,236 @@ body{
 	line-height:1.80857;
 }
 
+
+    body {
+      background: #f8f8f8;
+    }
+
+    .page-title {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .restaurant-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .restaurant-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .restaurant-body {
+      padding: 15px;
+    }
+
+    .restaurant-body h4 {
+      margin-top: 0;
+    }
+
+    .rating {
+      color: #ff9800;
+      font-weight: bold;
+    }
+
+    .btn-view {
+      margin-top: 10px;
+    }
+
+
+/* Fix modal blur issue */
+
+/* MENU PAGE BANNER */
+
+.page-banner{
+    background: url('../images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.page-banner::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.banner-content{
+    position: relative;
+    z-index: 2;
+}
+
+.page-banner h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.page-banner p{
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+/* MENU CARDS */
+
+.menu-card{
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-5px);
+}
+
+.menu-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.menu-card-body{
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-card-body h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.menu-card-body p{
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-price{
+    color: #d65106;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+.menu-card-body .btn{
+ float: right;
+}
+/* Cart Button */
+.navbar-nav li a {
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #ff5722 !important;
+}
+
+/* Cart Modal */
+#cartModal .modal-content{
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+}
+
+/* Modal Header */
+#cartModal .modal-header{
+    background: #ff5722;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#cartModal .modal-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Close Button */
+#cartModal .close{
+    color: white;
+    opacity: 1;
+    font-size: 28px;
+}
+
+/* Modal Body */
+#cartModal .modal-body{
+    padding: 25px;
+}
+
+#cartModal h4{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Order Items */
+#cartModal p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Inputs */
+#cartModal .form-control{
+    height: 45px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+#cartModal textarea.form-control{
+    height: 80px;
+}
+
+/* Buttons */
+#cartModal .btn-success{
+    background: #ff5722;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#cartModal .btn-success:hover{
+    background: #e64a19;
+}
+
+#cartModal .btn-default{
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.modal-dialog{
+    max-width: 500px;   /* or 600px */
+    margin: 60px auto;
+}
+/* Total Price */
+.total-price{
+    font-size: 20px;
+    color: #ff5722;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 a {
     color: #1f1f1f;
     text-decoration: none !important;
@@ -248,27 +478,21 @@ html, body{ height: 100%; }
     HEADER AREA
 -------------------------------------------------------------------*/
 
-#site-header{
-	
-}
-#header{}
+
 .logo{
 	float:left;
-	margin-left: 20px;
+	max-width: 300px;   
+    margin-left: 20px;
 }
 .header-block-top{
-	position: relative;  
+	position: absolute;
     z-index: 11;
     width: 100%;
     top: 0;
     left: 0;
-    display: flex;       
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
 }
 
-.main-menu{}
+
 .header-block-top .navbar-brand {
     margin: 0 !important;
     padding: 15px 0 15px;
@@ -358,11 +582,8 @@ html, body{ height: 100%; }
     z-index: 999;
     background-color: #202020;
     transition: 0.5s;
-    padding: 10px 20px;
+    padding: 10px 0 0 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-	display: flex; 
-	align-items: center;
-    justify-content: space-between;
 }
 
 .fixed-menu .navbar-brand{
@@ -837,16 +1058,12 @@ html, body{ height: 100%; }
 }
 
 .offer-item img {
-    width: 120px;          
-    height: 120px;         
-    border-radius: 50%;    
-    object-fit: cover;     
+    width: 20%;
     float: left;
-    margin: 10px;
+    padding: 10px;
     background: #fff;
-	border: 3px solid #000; 
+	border-radius: 50%;
 }
-
 
 .offer-item div {
     width: 60%;
@@ -1916,11 +2133,4 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
   height: 100%;
   object-fit: cover;   
   display: block;
-}
-.logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  background: transparent; 
 }
