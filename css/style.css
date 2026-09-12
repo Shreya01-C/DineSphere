@@ -829,12 +829,15 @@ html, body{ height: 100%; }
 }
 
 .offer-item img {
-    width: 20%;
+    width: 120px;          
+    height: 120px;         
+    border-radius: 50%;    
+    object-fit: cover;     
     float: left;
-    padding: 10px;
+    margin: 10px;
     background: #fff;
-	border-radius: 50%;
 }
+
 
 .offer-item div {
     width: 60%;
@@ -1906,6 +1909,8 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
   display: block;
 }
 .logo img {
+  width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
   background: transparent; 
