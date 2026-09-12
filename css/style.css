@@ -836,6 +836,7 @@ html, body{ height: 100%; }
     float: left;
     margin: 10px;
     background: #fff;
+	border: 3px solid #000; 
 }
 
 
