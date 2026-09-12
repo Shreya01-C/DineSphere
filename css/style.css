@@ -481,8 +481,6 @@ html, body{ height: 100%; }
 
 .logo{
 	float:left;
-	max-width: 300px;   
-    margin-left: 20px;
 }
 .header-block-top{
 	position: absolute;
@@ -1058,12 +1056,16 @@ html, body{ height: 100%; }
 }
 
 .offer-item img {
-    width: 20%;
+    width: 120px;          
+    height: 120px;         
+    border-radius: 50%;    
+    object-fit: cover;     
     float: left;
-    padding: 10px;
+    margin: 10px;
     background: #fff;
-	border-radius: 50%;
+	border: 3px solid #000;
 }
+
 
 .offer-item div {
     width: 60%;
