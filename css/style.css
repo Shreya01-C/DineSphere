@@ -486,13 +486,13 @@ html, body{ height: 100%; }
     left: 0;
     display: flex;             
     align-items: flex-start;       
-    justify-content: flex-start;
-    padding: 0 20px;
+    justify-content: space-between; 
+    padding: 0;                    
     background-color: #202020; 
 }
 
 .logo {
-	display: flex;
+	position: relative;
     top: 0;
 	left: 0;
 	margin: 0;
