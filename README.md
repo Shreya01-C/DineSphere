@@ -1,4 +1,4 @@
-# 🍽️ DineSphere
+# DineSphere 🍽️
 
 DineSphere is a responsive and visually engaging restaurant website showcasing a variety of features, built with HTML, CSS, JavaScript, and Bootstrap, this project emphasizes a user-friendly design with smooth navigation and appealing visuals.
 
@@ -8,7 +8,7 @@ DineSphere is a responsive and visually engaging restaurant website showcasing a
 [Launch DineSphere](https://gleaming-brioche-4ee5b4.netlify.app/)
 
 ---
-## Features
+## ✨ Features
 
 - Color Palette Switcher
 - Animation Preloading
@@ -21,7 +21,7 @@ DineSphere is a responsive and visually engaging restaurant website showcasing a
 - Smooth Navigation
 
 ---
-##  Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend**: HTML5, CSS3, Bootstrap, JavaScript 
 - **Animations**: WOW.js, Parallax
@@ -29,7 +29,7 @@ DineSphere is a responsive and visually engaging restaurant website showcasing a
 - **Deployment**: Netlify
 
 ---
-## Project Structure
+## 📂 Project Structure
 ```
 DineSphere-Restaurant/
 │── css/
@@ -41,7 +41,7 @@ DineSphere-Restaurant/
 │── README.md
 ```
 ---
-## Setup and Usage
+## 🚀 Setup and Usage
 
 1. Clone the repository
 ```
@@ -57,7 +57,7 @@ npm run
 ```
 > To use the reservation form, run the project on a local server such as XAMPP or WAMP.
 ---
-## Future Enhancements
+## 🔮 Future Enhancements
 
 - User Login & Registration
 - Online Food Ordering
